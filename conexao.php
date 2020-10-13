@@ -7,5 +7,5 @@
     if (mysqli_connect_errno($con)) {
    
         echo "Falha ao conectar ao Banco de dados: " . mysqli_connect_error();
-     }
+    }
 ?>
