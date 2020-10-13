@@ -1,29 +1,23 @@
 <div>
     <h1 class="titulo">INSERIR VENDA</h1>
     <form class="formulario" action="ins_venda.php" method="post">
+    <img class="img_cadastro" src=""/>
         <table>
             <tr>
-                <td>Cliente: </td><td>
-                    <select name="campo_nome" id="cmpNm">
-                        <option value="#">Selecione...</option>
-                    </select>
-                </td>
+                <td>Dispositivo: </td><td><input type="text" name="campo_dispositivo" id="cmpDp"></td>
             </tr>
             <tr>
-                <td>Funcionário: </td><td><input type="text" name="campo_funcionário" id="cmpFn"></td>
+                <td>Preço: </td><td><input type="text" name="campo_fabricante" id="cmpFb"></td>
             </tr>
             <tr>
-                <td>Animal: </td><td><input type="text" name="campo_animal" id="cmpAn"></td>
+                <td>Funcionário: </td><td><input type="text" name="campo_funcionario" id="cmpFc"></td>
             </tr>
             <tr>
-                <td>Data da venda: </td><td><input type="text" name="campo_dataVenda" id="cmpDv"></td>
-            </tr>
-            <tr>
-                <td>Preço: </td><td><input type="text" name="campo_preco" id="cmpPrc"></td>
+                <td>Data: </td><td><input type="date" name="campo_data" id="cmpDt"></td>
             </tr>
             <tr>
                 <td><input type="submit" value="SALVAR"></td><td></td>
             </tr>
         </table>
     </form>
-</div
+</div>
