@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('#conteudo').on('submit','#formCadastro',function(e){
+    $('#paginas').on('submit','#formCadastro',function(e){
         e.preventDefault();
         var formulario = $(this).serialize();
         $.ajax({
@@ -9,7 +9,7 @@ $(document).ready(function(){
             data: formulario,
             dataType: "text",
             success: function (response) {
-                if(response == "ok"){
+                if(response == "Ok"){
                     $('#formCadastro').each(function(){
                         this.reset();
                     });
@@ -21,7 +21,7 @@ $(document).ready(function(){
         });
     });
 
-    $('#conteudo').on('click','#btn_bscCliente',function(e){
+    $('#paginas').on('click','#btn_bscCliente',function(e){
         e.preventDefault();
         $.ajax({
             type: "post",
@@ -34,7 +34,7 @@ $(document).ready(function(){
         });
     });
 
-    $('#conteudo').on('focus','#cmpNm',function(e){
+    $('#paginas').on('focus','#cmpNm',function(e){
         e.preventDefault();
         $.ajax({
             type: "post",

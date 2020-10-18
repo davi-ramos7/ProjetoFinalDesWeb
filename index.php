@@ -22,7 +22,7 @@
                 
             </div>
         </div>
-        <div class="conteudo">
+        <div id="paginas" class="conteudo">
             <?php
                 if(isset($_GET['p'])){
                     $pagina = $_GET['p'];
