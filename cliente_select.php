@@ -7,5 +7,6 @@
             $resposta .= "<option value='".$lh['id_cliente']."'>".$lh['nome']." ".$lh['sobrenome']."</option>";
         }
         echo $resposta;
+        Teste para ver como o Github funciona
     }
 ?>
