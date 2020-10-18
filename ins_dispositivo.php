@@ -1,16 +1,16 @@
 <?php
-    if(isset($_POST['campo_nome'])){
-        $nome = $_POST['campo_nome'];
-        $sobrenome = $_POST['campo_sobrenome'];
-        $cpf = $_POST['campo_cpf'];
-        $endereco = $_POST['campo_endereco'];
-        $telefone = $_POST['campo_telefone'];
-        $email = $_POST['campo_email'];
-        $sql = "INSERT INTO clientes(nome,sobrenome,cpf,endereco,telefone,email)VALUES('$nome','$sobrenome','$cpf','$endereco','$telefone','$email')";
+    if(isset($_POST['campo_fab'])){
+        $fabricante = $_POST['campo_fab'];
+        $processador = $_POST['campo_proc'];
+        $memoria_ram = $_POST['campo_memoria'];
+        $hd = $_POST['campo_hd'];
+        $tela = $_POST['campo_tela'];
+        $preco = $_POST['campo_preco'];
+        $sql = "INSERT INTO dispositivos(fabricante,processador,memoria_ram,hd,tela,preco)VALUES('$fabricante','$processador','$memoria_ram','$hd','$tela','$preco')";
         include "conexao.php";
         if (mysqli_query($con, $sql)) {
             mysqli_close($con);
-            echo "ok";
+            echo "Ok";
         }else{
             echo "Erro: " . $sql . "<br>" . mysqli_error($con);
         }
