@@ -1,0 +1,37 @@
+<div>
+    <h1 class="titulo" >Inserir impressora</h1>
+    <form class="formulario" id="formCadastro" method="post">
+        <table>
+            <tr>
+                <td>Fabricante: </td><td><input type="text" name="campo_fab" id="cmpFb"></td>
+            </tr>
+            <tr>
+                <td>Tipo de impressão: </td>
+                <td>
+                    <input type="radio" name="impressao" id="jato" value="jato">
+                    <label for="jato">A jato de tinta</label><br>
+                    <input type="radio" name="impressao" id="laser" value="laser">
+                    <label for="laser">A laser</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Multifuncional? </td>
+                <td>
+                    <input type="radio" name="mult" id="sim" value="sim">
+                    <label for="sim">Sim</label><br>
+                    <input type="radio" name="mult" id="nao" value="nao">
+                    <label for="nao">Não</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Preço: </td><td><input type="text" name="campo_preco" id="cmpPc"></td>
+            </tr>
+            <tr>
+                <td>Estoque: </td><td><input type="number" name="campo_estoque" id="cmpEq"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="CADASTRAR"></td><td></td>
+            </tr>
+        </table>
+    </form>
+</div>

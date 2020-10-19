@@ -1,5 +1,5 @@
 <div>
-    <h1 class="titulo">INSERIR VENDA</h1>
+    <h1 class="titulo">Inserir Venda</h1>
     <form class="formulario" action="ins_venda.php" method="post">
     <img class="img_cadastro" src=""/>
         <table>
