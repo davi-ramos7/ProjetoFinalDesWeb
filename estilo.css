@@ -1,71 +1,152 @@
 table{
-	float: right;
+	margin-top: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+	font-family: cursive;
 }
 
-a{
-    text-decoration:none;
-    font-size:24px;
-    color:black;
-    padding-right: 40px;
+th {
+	padding: 5px;
+	border: solid;
+	background:rgb(192,192,192);
 }
-a:hover{color:rgb(255, 255, 255);}
 
 .titulo{
-	font-size: 24px;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	margin-left: 350px;
-	margin-top: 70px;
+	font-size: 18px;
+	font-family: cursive;
+	margin-left: 45%;
+	margin-top: 140px;
 }
 
 .topo {
 	height: 120px;
 	background: rgb(0,139,139);
-	position: fixed; 
+	position: absolute; 
 	width: 100%;
 	top: 0;
-	text-align: left;
-	font-family: Arial;
+	z-index: 1;
 }
 
 .conteudo {
     width: 100%;
-    top: 120px;
-    height: 620px;
+    top: 0px;
+    height: 100%;
     font-size: 14pt;
-    position: fixed;
+    position: absolute;
 	text-align: justify;
 	font-family: Arial;
 	background: rgba(192,192,192);
-}
-
-.rodape {
-	height: 100px;
-	background: rgb(176,196,222);
-    position: fixed;
-    width: 100%;
-    bottom: 0mm;
-	text-align: left;
-	font-family: Arial;
-}
-
-.pesquisa{
-	float: right;
-	padding: 5px;
-	margin-right: 30px;
-	margin-top: -110px;
-	border: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
-    width: 400px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
+	z-index: 0;
 }
 
 .menu {
 	font-weight: bold;
-	margin-top: -70px;
-    margin-left: 500px;
-    overflow: hidden; /*Não pode acontecer sobreposição*/
-    position: sticky; /*Posição fixa do menu*/
+	margin-top: -80px;
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.botao_menu {
+	background: rgb(0,139,139);
+	font-size: 16px;
+	font-family: cursive;
+	font-weight: bold;
+	color: black;
+	border: none;
+	cursor: pointer;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+.submenu1 {
+	display: none;
+	position: absolute;
+	background: rgb(0,139,139);
+	width: 208px;
+	box-shadow: 0px 8px 16px 0px rgba(28,28,28,0.5);
+}
+
+.submenu2 {
+	display: none;
+	position: absolute;
+	background: rgb(0,139,139);
+	width: 152px;
+	box-shadow: 0px 8px 16px 0px rgba(28,28,28,0.5);
+}
+
+.submenu1 a {
+	padding-left: 12px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	display: block;
+	text-decoration: none;
+}
+
+.submenu2 a {
+	padding-left: 12px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	display: block;
+	text-decoration: none;
+}
+
+.acao_menu:hover .submenu1 {
+	display: block;
+}
+
+.acao_menu:hover .submenu2 {
+	display: block;
+}
+
+.acao_menu:hover .botao_menu {
+	background-color: white;
+}
+
+.rodape {
+	height: 80px;
+	background: rgb(176,196,222);
+	position: absolute;
+    width: 100%;
+    bottom: 0%;
+	text-align: left;
+	font-family: Arial;
+	z-index: 1;
+}
+
+p {
+	font-size: 16px;
+	font-family: cursive;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin-top: 30px;
+}
+
+ul {
+	position: relative;
+	list-style-type: none;
+	text-decoration-style: none;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	font-size: 16px;
+	font-family: cursive;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+a:hover {
+	background: white;
 }
 
 .logo{
@@ -73,28 +154,21 @@ a:hover{color:rgb(255, 255, 255);}
 	margin-left: 30px;
 }
 
-.img_cadastro {
-	width: 330px;
-	height: 330px;
-	border: solid;
-	margin-left: 80px;
-	margin-top: 30px;
-}
-
 .formulario{
 	background: rgba(242,242,242);
-	width: 1000px;
-	height: 400px;
-	margin-top: 20px;
+	width: 400px;
+	height: 250px;
+	margin-top: 10px;
 	margin-right: auto;
     margin-left: auto;
 	border-radius: 5px;
 	padding: 20px;
 }
 
-input[type=text], input[type=email], select, textarea{
-	width: 300px;
-	padding: 12px;
+input[type=text], [type=number] {
+	font-family: cursive;
+	width: 200px;
+	padding: 2px;
 	border: 1px solid rgb(204,204,204);
 	border-radius: 4px;
 	margin-bottom: 0px;
@@ -105,19 +179,9 @@ select{
 }
 
 label{
-	font-family: Times;
-	padding: 12px;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-label:after{
-	content: " *";
-	color: red;
-}
-
-textarea{
-	height: 200px;
+	font-family: cursive;
+	padding: 16px;
+	font-size: 14px;
 }
 
 input[type=submit]{
@@ -125,21 +189,37 @@ input[type=submit]{
 	color: white;
 	font-weight: bold;
 	padding: 12px 20px;
+	font-size: small;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 	float: right;
-	margin-right: 35px;
+	margin-right: 20px;
 }
 
-input[type=reset]{
-	background: rgb(255,0,0);
-	color: white;
-	font-weight: bold;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	float: left;
-	margin-left: 160px;
+.fundo-estoque {
+
+    background: rgba(255,255,255);
+	width: 800px;
+	margin-top: 130px;
+	margin-right: auto;
+    margin-left: auto;
+	border-radius: 5px;
+	padding: 20px;
+
+}
+
+.dados-estoque{
+
+	width: 60% ;
+	margin-left: 50px;
+	margin-right: 100px;
+	float: right;
+}
+
+.imagem-estoque {
+	width: 200px;
+	height: 200px;
+	border: solid;
+
 }
