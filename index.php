@@ -12,7 +12,7 @@
 <body>
         <div class="topo">
             <div class="logo">
-                <img src="JPD_logo.png" width="170px" height="170px"> 
+                <img src="JPD_logo.png" width="150px" height="150px"> 
             </div> 
 		    <div class="menu">
                 <ul>
@@ -61,6 +61,12 @@
                     include "estoque_ver_imp.php";
                 }elseif($pagina == 'rv'){
                     include "venda_form.php";
+                }elseif($pagina == 'vdk'){
+                    include "venda_form_dk.php";
+                }elseif($pagina == 'vlp'){
+                    include "venda_form_lp.php";
+                }elseif($pagina == 'vimp'){
+                    include "venda_form_imp.php";
                 }
             ?>
         </div>

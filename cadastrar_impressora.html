@@ -1,6 +1,6 @@
 <div>
     <h1 class="titulo" >Inserir impressora</h1>
-    <form class="formulario" id="formCadastro" method="post">
+    <form class="formulario" id="formCadastro_imp" method="post">
         <table>
             <tr>
                 <td>Fabricante: </td><td><input type="text" name="campo_fab" id="cmpFb"></td>
@@ -8,23 +8,23 @@
             <tr>
                 <td>Tipo de impressão: </td>
                 <td>
-                    <input type="radio" name="impressao" id="jato" value="jato">
+                    <input type="radio" name="campo_impressao" id="jato" value="jato">
                     <label for="jato">A jato de tinta</label><br>
-                    <input type="radio" name="impressao" id="laser" value="laser">
+                    <input type="radio" name="campo_impressao" id="laser" value="laser">
                     <label for="laser">A laser</label><br>
                 </td>
             </tr>
             <tr>
-                <td>Multifuncional? </td>
+                <td>Funcionalidade: </td>
                 <td>
-                    <input type="radio" name="mult" id="sim" value="sim">
-                    <label for="sim">Sim</label><br>
-                    <input type="radio" name="mult" id="nao" value="nao">
-                    <label for="nao">Não</label><br>
+                    <input type="radio" name="campo_mult" id="mult" value="mult">
+                    <label for="mult">Multifuncional</label><br>
+                    <input type="radio" name="campo_mult" id="uni" value="uni">
+                    <label for="uni">Unifuncional</label><br>
                 </td>
             </tr>
             <tr>
-                <td>Preço: </td><td><input type="text" name="campo_preco" id="cmpPc"></td>
+                <td>Preço de tabela: </td><td><input type="text" name="campo_preco" id="cmpPc"></td>
             </tr>
             <tr>
                 <td>Estoque: </td><td><input type="number" name="campo_estoque" id="cmpEq"></td>

@@ -1,5 +1,5 @@
 table{
-	margin-top: 2px;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 16px;
@@ -12,11 +12,15 @@ th {
 	background:rgb(192,192,192);
 }
 
+td {
+	padding: 2px;
+}
+
 .titulo{
 	font-size: 18px;
 	font-family: cursive;
-	margin-left: 45%;
-	margin-top: 140px;
+	text-align: center;
+	margin-top: 130px;
 }
 
 .topo {
@@ -42,7 +46,7 @@ th {
 
 .menu {
 	font-weight: bold;
-	margin-top: -80px;
+	margin-top: -70px;
 	float: right;
 	margin-right: 20px;
 	cursor: pointer;
@@ -50,7 +54,7 @@ th {
 
 .botao_menu {
 	background: rgb(0,139,139);
-	font-size: 16px;
+	font-size: 18px;
 	font-family: cursive;
 	font-weight: bold;
 	color: black;
@@ -65,7 +69,7 @@ th {
 	display: none;
 	position: absolute;
 	background: rgb(0,139,139);
-	width: 208px;
+	width: 231px;
 	box-shadow: 0px 8px 16px 0px rgba(28,28,28,0.5);
 }
 
@@ -73,7 +77,7 @@ th {
 	display: none;
 	position: absolute;
 	background: rgb(0,139,139);
-	width: 152px;
+	width: 168.5px;
 	box-shadow: 0px 8px 16px 0px rgba(28,28,28,0.5);
 }
 
@@ -107,7 +111,7 @@ th {
 
 .rodape {
 	height: 80px;
-	background: rgb(176,196,222);
+	background: rgb(0,139,139);
 	position: absolute;
     width: 100%;
     bottom: 0%;
@@ -125,6 +129,33 @@ p {
 	margin-top: 30px;
 }
 
+ul#venda_opcoes li a{
+	font-size: 22px;
+	font-weight: bold;
+	color: rgb(0,139,139);
+}
+
+ul#venda_opcoes li {
+	padding-left: 20px;
+}
+
+#venda_titulo {
+	margin-top: 150px;
+	font-size: 20px;
+}
+
+#venda_opcoes {
+	width: 400px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0%;
+}
+
 ul {
 	position: relative;
 	list-style-type: none;
@@ -136,9 +167,10 @@ li {
 }
 
 li a {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: cursive;
 	color: black;
+	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
 	padding-right: 10px;
@@ -150,37 +182,53 @@ a:hover {
 }
 
 .logo{
-	margin-top: -20px;
-	margin-left: 30px;
+	margin-top: -10px;
+	margin-left: 0px;
 }
 
 .formulario{
 	background: rgba(242,242,242);
 	width: 400px;
-	height: 250px;
 	margin-top: 10px;
 	margin-right: auto;
     margin-left: auto;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 10px;
 }
 
-input[type=text], [type=number] {
+input[type=text], [type=number], [type=date] {
 	font-family: cursive;
 	width: 200px;
-	padding: 2px;
+	padding: 0;
 	border: 1px solid rgb(204,204,204);
 	border-radius: 4px;
 	margin-bottom: 0px;
 }
 
 select{
-	width: 94%;
+	font-family: cursive;
+	width: 200px;
+}
+
+table#tblVer {
+	margin-left: 70px;
+	text-align: center;
+	margin-top: -38px;
+}
+
+button#busca_lp, #busca_dk, #busca_imp {
+	margin-top: 5px;
+	margin-left: 0px;
+	font-family: cursive;
+	font-size: 18px;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: teal;
+	color: black;
 }
 
 label{
 	font-family: cursive;
-	padding: 16px;
 	font-size: 14px;
 }
 
@@ -188,38 +236,20 @@ input[type=submit]{
 	background: rgb(0,191,255);
 	color: white;
 	font-weight: bold;
-	padding: 12px 20px;
+	padding: 5px 5px;
 	font-size: small;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	float: right;
 	margin-right: 20px;
 }
 
 .fundo-estoque {
-
     background: rgba(255,255,255);
-	width: 800px;
+	width: 700px;
 	margin-top: 130px;
 	margin-right: auto;
     margin-left: auto;
 	border-radius: 5px;
 	padding: 20px;
-
-}
-
-.dados-estoque{
-
-	width: 60% ;
-	margin-left: 50px;
-	margin-right: 100px;
-	float: right;
-}
-
-.imagem-estoque {
-	width: 200px;
-	height: 200px;
-	border: solid;
-
 }

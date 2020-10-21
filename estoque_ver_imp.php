@@ -1,16 +1,17 @@
 <div class="fundo-estoque">
-    <!-- <button id="btn_bscClientes">Preencher</button><br> -->
-    <table>
+    <button id="busca_imp">Ver</button><br>
+    <table id="tblVer">
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Fabricante</th>
                 <th>Tipo de impressão</th>
-                <th>Multifuncional</th>
+                <th>Funcionalidade</th>
                 <th>Preço</th>
                 <th>Estoque</th>
             </tr>
         </thead>
-        <tbody id="tblDk">
+        <tbody id="tblImp">
 
         </tbody>
     </table>
