@@ -1,8 +1,9 @@
 <div class="fundo-estoque">
-    <!-- <button id="btn_bscClientes">Preencher</button><br> -->
-    <table>
+    <button id="busca_lp">Ver</button><br>
+    <table id="tblVer">
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Fabricante</th>
                 <th>Processador</th>
                 <th>Memória Ram</th>
@@ -12,7 +13,7 @@
                 <th>Estoque</th>
             </tr>
         </thead>
-        <tbody id="tblDk">
+        <tbody id="tblLp">
 
         </tbody>
     </table>
